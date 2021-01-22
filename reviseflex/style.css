@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-size: x-small;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --overlay_color : rgba(0,0,0, 0.5);
+    --overlay_color-light : rgba(0,0,0, 0.3);
+    --overlay_color-dark : rgba(0,0,0, 0.9);
+    --container-width : 119.9rem;
+    --color-white : #fff;
+    --color-lightgreen : lightgreen;
+    --landing-section-height: 100vh;
+   
+}
+ 
+.html{
+    font-size: medium;
+}
+.container{
+    margin: 0 auto;
+    width: 90%;
+}
+.btn{
+    font-size: 1.8rem;
+    display: inline-block;
+    padding: .7rem 1.5rem;
+}
+
+.btn.btn-white{
+    background-color: var(--color-white);
+    color: #000;
+}
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 9rem;
+    background-color: var(--overlay_color);
+    color: var(--color-white);
+    width: 100%;
+    z-index: 50;
+    font-size: small;
+}
+.header-wrap{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.header-wrap .logo-part{
+    font-size: 2.5rem;
+ 
+ }
+
+.header-wrap .header-list{
+    max-width: 40rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-wrap .header-list .header-link{
+    color: var(--color-white); 
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+
+.section.landing-section-bg{
+    background-image: url(./img/janellis-digital-strategists-and-creative-experts.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.section.landing-section-bg::before{
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: var(--overlay_color-light);
+    content: "";
+    height: 100%;
+    width: 100%;
+ }
+ .landing-section-container{
+     height: var(--landing-section-height);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     position: relative;
+ }
+ 
+ .landing-section-container .btn{
+     align-self: flex-start;
+ }
+ .main-head {
+    font-size: 7rem;
+    font-weight: 400;
+    color: var(--color-white);
+    text-transform: capitalize;
+    margin-bottom: 5rem;
+}
+
+.main-head .highlight{
+   font-size: 10rem;
+   font-weight: 600;
+}
